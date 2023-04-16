@@ -4,7 +4,7 @@ import Check_plus from "../assets/check_plus.svg";
 import axios from "axios";
 import path from "../../path";
 function Interested() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(); 
   const [myInterest, setMyInterest] = useState();
   const [interest, setInterest] = useState([]); 
   useEffect(() => {
