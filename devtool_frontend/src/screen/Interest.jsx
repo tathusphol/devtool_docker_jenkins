@@ -6,7 +6,7 @@ import path from "../../path";
 function Interested() {
   const [user, setUser] = useState();
   const [myInterest, setMyInterest] = useState();
-  const [interest, setInterest] = useState([]);
+  const [interest, setInterest] = useState([]); 
   useEffect(() => {
     axios
       .post(`${path}/user`, { user_id: localStorage.getItem("user") })
