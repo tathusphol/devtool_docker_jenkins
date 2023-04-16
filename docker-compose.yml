@@ -1,0 +1,13 @@
+services:
+  web:
+    build: ./devtool_frontend
+    image: tathus/img_frontend:lastest
+    ports:
+      - "3000:3000"
+    container_name: frontend
+  server:
+    build: ./devtool_backend
+    image: tathus/img_backend:lastest
+    ports:
+      - "4000:4000"
+    container_name: backend
