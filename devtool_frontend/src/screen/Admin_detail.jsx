@@ -67,7 +67,7 @@ function Admin_detail() {
       </div>
       <div className="py-2 bg-[#FD7D61]">
         <div>
-          <p className="text-3xl text-white font-bold text-center">Ongoing Activity</p>
+          <p className="text-3xl text-white font-bold text-center">Activity Detail</p>
         </div>
       </div>
       {activity && (
