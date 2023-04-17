@@ -33,7 +33,7 @@ router.post("/signup/account", async function (req, res, next) {
   let location = req.body.location;
   let password1 = req.body.password1;
   let password2 = req.body.password2;
-  let img = "/uploads/profile.jpeg";
+  let img = "/profile/profile.jpeg";
   let role = "Volunteer";
   if (password1 != password2) {
     alert("Password do not match");
