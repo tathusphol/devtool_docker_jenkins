@@ -33,7 +33,6 @@ router.post("/signup/account", async function (req, res, next) {
   let location = req.body.location;
   let password1 = req.body.password1;
   let password2 = req.body.password2;
-  let interest = [];
   let img = "/profile/profile.jpeg";
   let role = "Volunteer";
   if (password1 != password2) {
@@ -44,7 +43,7 @@ router.post("/signup/account", async function (req, res, next) {
     try {
       const user = await conn.query(
         "INSERT INTO users(firstname, lastname, email, password, tel, location, img, interest, role) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)",
-        [firstname, lastname, email, password1, tel, location, img, interest, role]
+        [firstname, lastname, email, password1, tel, location, img, "[]", role]
       );
       await conn.commit();
       res.json("success");
